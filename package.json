@@ -1,0 +1,19 @@
+{
+  "name": "backend_app",
+  "version": "1.0.0",
+  "description": "Backend of the app",
+  "keywords": [
+    "javascript",
+    "express",
+    "learn",
+    "youtube",
+    "twitter"
+  ],
+  "license": "ISC",
+  "author": "Subhrojyoti Das",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
