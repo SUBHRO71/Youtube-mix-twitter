@@ -11,13 +11,13 @@ export const uploadToCloudinary = async (filePath) => {
     try{
         if(!filePath) return null;
 
-        const result = await cloudinary.uploader.upload(filePath, {resource_type: "auto"});
+        const result = await cloudinary.uploader.upload(filePath, {resource_type: "auto"}); //if worked then uploading successful
         return result.secure_url;
     }catch(err){
-        fs.unlinkSync(filePath);
+        fs.unlinkSync(filePath);  //remove the locally saved file as the uploading failed
         console.error("Error uploading to Cloudinary:", err);
         return null;
     }
 }
 
-ex
+export {uploadToCloudinary}

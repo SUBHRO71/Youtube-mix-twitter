@@ -38,6 +38,6 @@ const vidoeSchema = new Schema(
         }
     },{timestramps: true});
 
-vidoeSchema.plugin(mongooseAggregatePaginate);
+vidoeSchema.plugin(mongooseAggregatePaginate); //Helps in using aggregation queries in the mongoose
 
 export const Video = mongoose.model("Video",vidoeSchema)
