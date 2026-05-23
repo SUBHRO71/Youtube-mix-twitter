@@ -17,6 +17,12 @@ app.use(express.static("public"))  //This is to serve static files like images, 
 app.use(cookieParser())
 
 
+//routes imported
+import userRouter from './routes/user.routes.js'
+
+
+//routing begins
+app.use("/api/v1/users",userRouter);
 
 
 export {app};
